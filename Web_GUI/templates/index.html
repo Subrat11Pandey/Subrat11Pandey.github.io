@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<style>
+.container {
+  text-align: center;
+}
+
+.box {
+  display: inline-block;
+  width: 30%;
+  
+  background-color: white;
+  margin: 10px;
+}
+</style>
+	<style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>OBJ DETC</title>
+</head>
+<body>
+    <p>Hello MY friend !</p>
+
+    <form class="form-sighin col-lg-3" method = post enctype=multipart/form-data name = "form1">
+    <h1 class = "h3 mb-3 font-weight-normal"> Upload any image or video</h1>
+    <input type="file" name ="file" class = "form-control-file" id="inputfile">
+    <br/>
+    <button class="btn btn-block btn-default btn-sm" type = 'submit'> UPLOAD</button>
+    <p class="mt-5 mb-3 text-muted">Built using python and flask</p>
+</form>
+
+<h1>Processed Image</h1>
+
+<img src="data:image/jpeg;base64,{{ image_data }}" alt="Processed Image">
+
+
+
+
+</body>
+</html>
